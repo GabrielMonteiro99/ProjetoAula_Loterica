@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Lotérica - Aula 29-08</string>
+
+    <string-array name="lista_jogos_preview">
+        <item>Número de jogos</item>
+    </string-array>
 </resources>

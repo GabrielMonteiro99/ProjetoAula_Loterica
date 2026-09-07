@@ -11,130 +11,159 @@
         android:id="@+id/imageView2"
         android:layout_width="142dp"
         android:layout_height="88dp"
-        android:layout_marginTop="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/trevo3"/>
+        app:layout_constraintVertical_bias="0.41"
+        app:srcCompat="@drawable/trevo3" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btlotomania"
         android:layout_width="150dp"
         android:layout_height="98dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
         android:backgroundTint="#F47920"
         android:text="Lotomania\n R$ 1,4 milhão"
+        android:textStyle="bold"
         app:cornerRadius="0dp"
-        app:layout_constraintStart_toEndOf="@+id/button2"
-        tools:layout_editor_absoluteY="389dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btencerrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintStart_toEndOf="@+id/btquina" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btlotofacil"
         android:layout_width="150dp"
         android:layout_height="98dp"
         android:layout_marginStart="16dp"
+        android:layout_marginBottom="40dp"
         android:backgroundTint="#4A148C"
         android:text="Loto fácil\n R$ 5 milhões"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         app:cornerRadius="0dp"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:strokeColor="@color/black"
-        tools:layout_editor_absoluteY="292dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btlotomania"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btmegasena"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.967" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btquina"
         android:layout_width="150dp"
         android:layout_height="98dp"
-        android:layout_marginStart="52dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="24dp"
         android:backgroundTint="#4A1A6D"
         android:text="Quina\n R$ 9,2 milhões"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         app:cornerRadius="0dp"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="389dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btvoltar"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btmegasena"
         android:layout_width="150dp"
         android:layout_height="98dp"
-        android:layout_marginStart="52dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="40dp"
         android:backgroundTint="@android:color/holo_green_light"
-        android:strokecolor="app:strokeColor"
         android:text="Mega-Sena\n R$ 30 milhões."
+        android:textStyle="bold"
         android:textColorLink="#4CAF50"
         app:cornerRadius="0dp"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="292dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btquina"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button5"
-        android:layout_width="106dp"
-        android:layout_height="39dp"
+        android:id="@+id/btencerrar"
+        android:layout_width="113dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="100dp"
         android:backgroundTint="@color/white"
         android:text="Encerrar"
         android:textColor="@color/black"
         app:cornerRadius="0dp"
-        app:layout_constraintEnd_toEndOf="@+id/button4"
-        app:layout_constraintHorizontal_bias="0.454"
-        app:layout_constraintStart_toStartOf="@+id/button4"
-        tools:layout_editor_absoluteY="522dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/btlotomania"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="@+id/btlotomania" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/btvoltar"
         android:layout_width="106dp"
         android:layout_height="39dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginBottom="100dp"
         android:backgroundTint="@color/white"
         android:text="Voltar"
         android:textColor="@color/black"
         app:cornerRadius="0dp"
-        app:layout_constraintStart_toStartOf="@+id/button2"
-        tools:layout_editor_absoluteY="522dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/btquina"
+        app:layout_constraintStart_toStartOf="@+id/btquina" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="180dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="28dp"
+        android:fontFamily="cursive"
         android:text="Loterias online"
+        android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="30dp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="144dp" />
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
         android:text="Jogos proibidos para menores de 18 anos. Jogue com responsabilidade."
         android:textColor="#0B132B"
         android:textSize="10dp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="52dp"
-        tools:layout_editor_absoluteY="715dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/textView4" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="cursive"
         android:text="Aposte quando e onde quiser\n   todos os jogos acumulam"
         android:textColor="#0B132B"
-        android:textSize="20dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btmegasena"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="209dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:text="Todos os direitos reservados a Gabriel Monteiro"
         android:textAlignment="center"
         android:textColor="#B3000000"
         android:textSize="12sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="699dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="@+id/btencerrar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btvoltar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
