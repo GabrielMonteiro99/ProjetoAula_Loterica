@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="Lotomania\nR$ 5 milhões."
+        android:text="Lotomania\nR$ 5 milhões"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="22sp"
