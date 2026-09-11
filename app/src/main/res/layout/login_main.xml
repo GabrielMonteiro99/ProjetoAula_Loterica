@@ -91,33 +91,33 @@
         app:layout_constraintTop_toBottomOf="@+id/senha"/>
 
     <Button
-        android:id="@+id/btlogin"
+        android:id="@+id/btencerrar"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
         android:backgroundTint="@color/white"
-        android:text="Entrar"
+        android:text="Encerrar"
         android:textColor="@color/black"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/btfinalizar"
+        app:layout_constraintEnd_toStartOf="@+id/btentrar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textsenha"/>
 
     <Button
-        android:id="@+id/btfinalizar"
+        android:id="@+id/btentrar"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="40dp"
         android:backgroundTint="#FFFFFF"
-        android:text="Finalizar"
+        android:text="Entrar"
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btlogin"
-        app:layout_constraintTop_toTopOf="@+id/btlogin"/>
+        app:layout_constraintStart_toEndOf="@+id/btencerrar"
+        app:layout_constraintTop_toTopOf="@+id/btencerrar"/>
 
     <TextView
         android:id="@+id/textView4"
@@ -142,6 +142,7 @@
         android:textSize="10dp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="711dp" />
+        tools:layout_editor_absoluteY="711dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

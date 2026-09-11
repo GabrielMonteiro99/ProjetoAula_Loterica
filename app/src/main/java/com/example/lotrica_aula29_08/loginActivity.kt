@@ -12,8 +12,8 @@ class loginActivity : AppCompatActivity() {
 
     private lateinit var textusuario: EditText
     private lateinit var textsenha: EditText
-    private lateinit var btLogin: Button
-    private lateinit var btfinalizar: Button
+    private lateinit var btentrar: Button
+    private lateinit var btencerrar: Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,12 +21,12 @@ class loginActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.login_main)
 
-        btLogin = findViewById(R.id.btlogin)
-        btfinalizar = findViewById(R.id.btfinalizar)
+        btentrar = findViewById(R.id.btentrar)
+        btencerrar = findViewById(R.id.btentrar)
         textusuario = findViewById(R.id.textusuario)
         textsenha = findViewById(R.id.textsenha)
 
-        btLogin.setOnClickListener {
+        btentrar.setOnClickListener {
 
             val usuariostring = textusuario.text.toString().trim()
             val senhastring = textsenha.text.toString().trim()
@@ -45,7 +45,7 @@ class loginActivity : AppCompatActivity() {
                 Toast.makeText(this, "Preencha todos os campos corretamente!", Toast.LENGTH_SHORT).show()
             }
         }
-            btfinalizar.setOnClickListener {
+            btencerrar.setOnClickListener {
             finishAffinity()
             }
         }
